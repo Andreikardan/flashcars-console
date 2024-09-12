@@ -13,15 +13,15 @@ class ChoiceTestFile {
               name: "Choice",
               message: "Выбери тему викторины:",
               choices: [
-                { name: "Мир губки боба" },
-                { name: "Побег из курятника" },
+                { name: "Общие Знания" },
+                { name: "Правила дорожного движения" },
                 { name: "Путешествие на Луну" },
               ],
             },
           ])
-          .then((answers) => fs.writeFile("./choice.txt", answers.Choice))
-          .then(() => Test.writeFile());
-      } catch (error) {
+          .then((answers) => Test.writeFile(answers.Choice))
+
+      } catch ({error}) {
         console.error("Ошибка при чтении файлов:", error);
       }
     })();
