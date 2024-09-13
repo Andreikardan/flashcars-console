@@ -1,6 +1,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs').promises;
 const Test = require('./Test.js');
+const chalk = require("chalk");
+const figlet = require("figlet");
+
+console.log(chalk.magenta.bold(figlet.textSync("Hello, friends!", { horizontalLayout: "full" })));
 
 class ChoiceTestFile {
   static async chooseTopic() {

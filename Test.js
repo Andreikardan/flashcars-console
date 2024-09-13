@@ -19,6 +19,6 @@ class Test {
   }
 }
 
-Test.readAndReturnQuestion();
+// Test.readAndReturnQuestion();
 
 module.exports = Test;
