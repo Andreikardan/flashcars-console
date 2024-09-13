@@ -1,6 +1,9 @@
-const inquirer = require("inquirer");
-const fs = require("fs").promises;
-const Test = require("./Test.js");
+const inquirer = require('inquirer');
+const fs = require('fs').promises;
+const Test = require('./Test.js');
+
+
+
 
 class ChoiceTestFile {
   static choiceFile() {
@@ -9,20 +12,19 @@ class ChoiceTestFile {
         inquirer
           .prompt([
             {
-              type: "list",
-              name: "Choice",
-              message: "Выбери тему викторины:",
+              type: 'list',
+              name: 'Choice',
+              message: 'Выбери тему викторины:',
               choices: [
-                { name: "Общие Знания" },
-                { name: "Правила дорожного движения" },
-                { name: "Путешествие на Луну" },
+                { name: 'Общие Знания' },
+                { name: 'Правила дорожного движения' },
+                { name: 'Мультфильмы' },
               ],
             },
           ])
-          .then((answers) => Test.writeFile(answers.Choice))
-
-      } catch ({error}) {
-        console.error("Ошибка при чтении файлов:", error);
+          .then((answers) => Test.writeFile(answers.Choice));
+      } catch ({ error }) {
+        console.error('Ошибка при чтении файлов:', error);
       }
     })();
   }
