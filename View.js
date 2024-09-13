@@ -1,7 +1,6 @@
 const ChoiceTestFile = require('./Model');
 const Test = require('./Test');
-const chalk = require("chalk");
-const figlet = require("figlet");
+const Controller = require('./Controller');
 
 class QuestionView {
   static questionCounter = 0;
@@ -9,12 +8,13 @@ class QuestionView {
   constructor(obj) {
     this.message = obj.message;
     this.choices = obj.choices;
+    this.currentAnswer = obj.choices.find((el) => el.isCorrect === true)?.name;
     QuestionView.questionCounter += 1;
   }
 
   getObjToPrint() {
     const quesObjToPrint = {};
-    quesObjToPrint.type = 'list';
+    quesObjToPrint.type = 'rawlist';
     quesObjToPrint.name = `choice-${QuestionView.questionCounter}`;
     quesObjToPrint.message = this.message;
     quesObjToPrint.choices = this.choices;

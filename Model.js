@@ -1,9 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs').promises;
 const Test = require('./Test.js');
-const chalk = require("chalk");
-const figlet = require("figlet");
-console.log(chalk.magenta.bold(figlet.textSync("Hello, friend!", { horizontalLayout: "full" })));
+
 class ChoiceTestFile {
   static async chooseTopic() {
     try {
@@ -12,11 +10,11 @@ class ChoiceTestFile {
           {
             type: 'list',
             name: 'Choice',
-            message: chalk.bold('Выбери тему викторины:'),
+            message: 'Выбери тему викторины:',
             choices: [
-              { name: chalk.magenta('Общие Знания') },
-              { name: chalk.green('Правила дорожного движения') },
-              { name: chalk.blue('Мультфильмы') },
+              { name: 'Общие Знания' },
+              { name: 'Правила дорожного движения' },
+              { name: 'Мультфильмы' },
             ],
           },
         ]);
@@ -27,6 +25,6 @@ class ChoiceTestFile {
   }
 }
 
-ChoiceTestFile.chooseTopic();
+// ChoiceTestFile.chooseTopic();
 
 module.exports = ChoiceTestFile;
