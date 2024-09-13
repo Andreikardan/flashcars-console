@@ -1,5 +1,7 @@
 const ChoiceTestFile = require('./Model');
 const Test = require('./Test');
+const chalk = require("chalk");
+const figlet = require("figlet");
 
 class QuestionView {
   static questionCounter = 0;

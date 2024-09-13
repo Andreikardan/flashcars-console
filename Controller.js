@@ -2,6 +2,8 @@ const inquirer = require('inquirer');
 const ChoiceTestFile = require('./Model');
 const Test = require('./Test');
 const QuestionView = require('./View');
+const chalk = require("chalk");
+const figlet = require("figlet");
 
 class Controller {
   static async startGame() {

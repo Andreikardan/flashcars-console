@@ -1,5 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs').promises;
+const chalk = require("chalk");
+const figlet = require("figlet");
 
 class Test {
   static readAndReturnQuestion(name) {
