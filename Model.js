@@ -1,10 +1,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs').promises;
+const chalk = require('chalk');
+const figlet = require('figlet');
 const Test = require('./Test.js');
-const chalk = require("chalk");
-const figlet = require("figlet");
 
-console.log(chalk.magenta.bold(figlet.textSync("Hello, friends!", { horizontalLayout: "full" })));
+console.log(chalk.magenta.bold(figlet.textSync('Hello, friends!', { horizontalLayout: 'full' })));
 
 class ChoiceTestFile {
   static async chooseTopic() {
@@ -14,11 +14,11 @@ class ChoiceTestFile {
           {
             type: 'list',
             name: 'Choice',
-            message: 'Выбери тему викторины:',
+            message: chalk.magenta('Выбери тему викторины:'),
             choices: [
-              { name: 'Общие Знания' },
-              { name: 'Правила дорожного движения' },
-              { name: 'Мультфильмы' },
+              { name: chalk.magenta('Общие Знания') },
+              { name: chalk.blue('Правила дорожного движения') },
+              { name: chalk.green('Мультфильмы') },
             ],
           },
         ]);
