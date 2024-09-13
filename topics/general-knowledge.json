@@ -1,46 +1,46 @@
 [       {
           "message": "Как называется край буханки?",
           "choices": [
-            { "name": "горбушка" },
-            { "name": "белужка"  },
-            { "name": "севрюжка" },
-            { "name": "лососька" }
+            { "name": "горбушка", "isCorrect": true },
+            { "name": "белужка", "isCorrect": false  },
+            { "name": "севрюжка", "isCorrect": false },
+            { "name": "лососька", "isCorrect": false }
           ]
         },
         {
           "message": "Продолжите поговорку: 'Лучше синица в руках, чем...'",
           "choices": [
-            { "name": "Кукушка в часах" },
-            { "name": "Журавль в небе"  },
-            { "name": "Ворона на помойке" },
-            { "name": "Петух в собачьей будке" }
+            { "name": "Кукушка в часах", "isCorrect": false },
+            { "name": "Журавль в небе", "isCorrect": true  },
+            { "name": "Ворона на помойке", "isCorrect": false },
+            { "name": "Петух в собачьей будке", "isCorrect": false }
           ]
         },
         {
           "message": "Чего, согласно расхожему фразеологизму, нет у бедняка?",
           "choices": [
-            { "name": "Ни пуха, ни пера" },
-            { "name": "Ни кола, ни двора"  },
-            { "name": "Ни сучка, ни задоринки" },
-            { "name": "Ни слуху, ни духу" }
+            { "name": "Ни пуха, ни пера", "isCorrect": false },
+            { "name": "Ни кола, ни двора", "isCorrect": true  },
+            { "name": "Ни сучка, ни задоринки", "isCorrect": false },
+            { "name": "Ни слуху, ни духу", "isCorrect": false }
           ]
         },
         {
           "message": "Как часто называют человека, который не реагирует на чужие переживания?",
           "choices": [
-            { "name": "Галета" },
-            { "name": "Лепешка"  },
-            { "name": "Сухарь" },
-            { "name": "Пряник" }
+            { "name": "Галета", "isCorrect": false },
+            { "name": "Лепешка", "isCorrect": false  },
+            { "name": "Сухарь", "isCorrect": true },
+            { "name": "Пряник", "isCorrect": false }
           ]
         },
         {
           "message": "Куда не разрешали ходить детям в сказке Корнея Чуковского 'Бармалей'?",
           "choices": [
-            { "name": "В Африку" },
-            { "name": "В Азию"  },
-            { "name": "В штаны" },
-            { "name": "В Америку" }
+            { "name": "В Африку", "isCorrect": true },
+            { "name": "В Азию", "isCorrect": false  },
+            { "name": "В штаны", "isCorrect": false },
+            { "name": "В Америку", "isCorrect": false }
           ]
         }
 ]

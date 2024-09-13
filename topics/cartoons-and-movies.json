@@ -1,17 +1,17 @@
 [       {
   "message": "Дуэтом с черепахой песенку «Я на солнышке лежу…» пел?",
   "choices": [
-    { "name": "рыбка", "isCorrect": true },
+    { "name": "рыбка", "isCorrect": false },
     { "name": "львенок", "isCorrect": true},
-    { "name": "котенок", "isCorrect": true },
+    { "name": "котенок", "isCorrect": false },
     { "name": "лягушонок", "isCorrect": false }
   ]
 },
 {
   "message": "Как заканчивается строчка песни из мультфильма «Бременские музыканты»: «Мы своё призванье не забудем, смех и радость мы...»?",
   "choices": [
-    { "name": "Жертвуем юмористам",  "isCorrect": true},
-    { "name": "Жалуем королю",  "isCorrect": true  },
+    { "name": "Жертвуем юмористам",  "isCorrect": false},
+    { "name": "Жалуем королю",  "isCorrect": false  },
     { "name": "Приносим людям",  "isCorrect": true },
     { "name": "Получили от автора",  "isCorrect": false }
   ]
@@ -19,7 +19,7 @@
 {
   "message": "Кого в мультфильме 'Приключения Винни-Пуха' можно назвать самым печальным героем?",
   "choices": [
-    { "name": "Винни-Пух",  "isCorrect": true },
+    { "name": "Винни-Пух",  "isCorrect": false },
     { "name": "Ослик Иа-Иа", "isCorrect": true },
     { "name": "Пятачок", "isCorrect": false }
   ]
@@ -27,9 +27,9 @@
 {
   "message": "Птичка из мультфильма «Трое из Простоквашино», которая умела говорить «кто там»",
   "choices": [
-    { "name": "Сорока",  "isCorrect": true },
+    { "name": "Сорока",  "isCorrect": false },
     { "name": "Галка",  "isCorrect": true  },
-    { "name": "Курица", "isCorrect": true},
+    { "name": "Курица", "isCorrect": false},
     { "name": "Сова", "isCorrect": false }
   ]
 },
@@ -37,8 +37,8 @@
   "message": "Как называется улица, на которой живёт кот Леопольд?",
   "choices": [
     { "name": "Мурлыкина",  "isCorrect": true },
-    { "name": "Мурзилкина", "isCorrect": true },
-    { "name": "Мурмурина",  "isCorrect": true},
+    { "name": "Мурзилкина", "isCorrect": false },
+    { "name": "Мурмурина",  "isCorrect": false},
     { "name": "Котяткина", "isCorrect": false}
   ]
 }
