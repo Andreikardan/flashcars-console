@@ -1,4 +1,7 @@
 const inquirer = require('inquirer');
+const chalk = require('chalk');
+const figlet = require('figlet');
+const { EOL } = require('os');
 const ChoiceTestFile = require('./Model');
 const Test = require('./Test');
 const QuestionView = require('./View');
@@ -11,7 +14,6 @@ class Controller {
     console.log(choice.Choice);
     const questionModelArr = await Test.readAndReturnQuestion(choice.Choice);
 
-    // console.log('questionModelArr', JSON.parse(questionModelArr));
     const createdQuestionViews = JSON.parse(questionModelArr)
       .map((questionModelItem) => new QuestionView(questionModelItem).getObjToPrint());
 
@@ -25,7 +27,7 @@ class Controller {
           Controller.points += 1;
         }
       });
-      console.log('====>>>>>', Controller.points);
+      console.log('====>>>>>', Controller.points, EOL, chalk.green.bold(figlet.textSync('Thanks for your answers!', { horizontalLayout: 'full' })));
     } catch (error) {
       console.error('Ошибка при чтении файлов:', error);
     }
