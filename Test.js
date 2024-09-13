@@ -2,18 +2,18 @@ const inquirer = require('inquirer');
 const fs = require('fs').promises;
 
 class Test {
-  static writeFile(name) {
+  static readAndReturnQuestion(name) {
     (async () => {
       try {
         if (name === 'Общие Знания') {
-          const newPath = await fs.readFile('./topics/general-knowledge.txt', 'utf-8');
-          return newPath;
+          const arr = await fs.readFile('./topics/general-knowledge.txt', 'utf-8');
+          return arr;
         } if (name === 'Правила дорожного движения') {
-          const newPath = await fs.readFile('./topics/traffic-laws.txt', 'utf-8');
-          return newPath;
+          const arr = await fs.readFile('./topics/traffic-laws.txt', 'utf-8');
+          return arr;
         } if (name === 'Мультфильмы') {
-          const newPath = await fs.readFile('./topics/cartoons-and-movies.txt', 'utf-8');
-          return newPath;
+          const arr = await fs.readFile('./topics/cartoons-and-movies.txt', 'utf-8');
+          return arr;
         }
       } catch ({ error }) {
         console.error('Ошибка при чтении файлов:', error);
@@ -22,6 +22,6 @@ class Test {
   }
 }
 
-Test.writeFile();
+Test.readAndReturnQuestion();
 
 module.exports = Test;
